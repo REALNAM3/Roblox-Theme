@@ -31,6 +31,7 @@ html {
 .container-fluid,
 .age-verification-upsell-banner,
 .rbx-navbar-header,
+.rbx-tab.active,
 .navbar-header,
 .nav.rbx-navbar,
 .select-option,
@@ -54,7 +55,8 @@ html {
 .bg-surface-300,
 .group-profile-header .contextual-menu-actions-btn,
 .btn-control-sm,
-.btn-control-xs, 
+.btn-control-xs,
+.nav-tabs,
 .menu-vertical .menu-option .menu-secondary-option:active, 
 .menu-vertical .menu-option .menu-secondary-option.active,
 .menu-vertical .menu-option .menu-secondary-option:hover, 
@@ -162,7 +164,7 @@ html {
 =========================== */
 .rbx-tab .rbx-tab-heading,
 .rbx-tabs-horizontal .rbx-tab .rbx-tab-heading,
-.rbx-tabs-horizontal .nav-tabs {
+.rbx-tabs-horizontal {
 	background-color: #16191d;
 	color: #fff;
 }
@@ -239,8 +241,6 @@ html {
 .game-tile-list .game-tile .game-card-container {
 	width: 150px;
 }
-
-
 
 .stack .card-list .card-item .button .game-server-join-btn {
 	margin: 12px auto 0;
@@ -338,13 +338,15 @@ html {
    THUMBNAILS
 =========================== */
 .asset-thumb-container,
-.item-card-container .item-card-thumb-container {
+.item-card-container {
 	background-color: transparent;
 }
 
-
 .avatar .avatar-card-image,
-.content .add-friends-icon-container {
+.content .add-friends-icon-container,
+.item-card-thumb-container,
+.profile-accoutrements-slider .accoutrement-item a,
+.thumbnail-2d-container img {
 	background-color: #404754 !important;
 	background-size: 100%;
 }
@@ -468,6 +470,7 @@ input[type=radio] {
 
 .roseal-badges-container .roseal-badges .new-badges-grids-container .new-badges-grid-container .new-badges-grid .badge-container,
 .select-group .select-option, .select-group .rbx-select, 
+.friends-filter-searchbar-container,
 .rbx-select-group .select-option, 
 .rbx-select-group .rbx-select {
 	background: #16191d;
@@ -496,7 +499,8 @@ input[type=radio] {
 }
 
 .roseal-menu-secondary-container .roseal-menu-secondary-option-content,
-.roseal-file-input, 
+.roseal-file-input,
+.user-profile-pop-up-text,
 .transparent-background-menu .menu-option:not(.roseal-menu-secondary-option), .transparent-background-menu .menu-option-content:not(.roseal-menu-secondary-option-content) {
     background-color: #16191d !important;
 	color: #fff;
