@@ -7,16 +7,7 @@ html {
 /* ===========================
    FONT
 =========================== */
-@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Geist+Mono:wght@100..900&display=swap');
 
-.builder-font,
-.builder-font input,
-.builder-font textarea,
-.builder-font select,
-.builder-font button,
-.text {
-    font-family: "Geist", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
-}
 /* ===========================
    DARK THEME ROOT COLORS
 =========================== */
@@ -39,11 +30,14 @@ html {
 .personalized-bonus-items__container,
 .avatar-card-btns,
 .dropdown-menu,
+.slide-item-container-left,
+.slide-item-container-right,
 .web-blox-css-mui-hjn929.MuiPaper-elevation,
 .menu-vertical .menu-option .menu-secondary,
-.profile-avatar-left {
+.profile-avatar-left,
+.chat-friend-list {
 	background-color: #16191d !important;
-	color: #fff;
+	color: #fff !important;
 }
 
 .btn-control-md ,
@@ -57,6 +51,7 @@ html {
 .btn-control-sm,
 .btn-control-xs,
 .nav-tabs,
+.group-forums-category-pill,
 .menu-vertical .menu-option .menu-secondary-option:active, 
 .menu-vertical .menu-option .menu-secondary-option.active,
 .menu-vertical .menu-option .menu-secondary-option:hover, 
@@ -66,13 +61,36 @@ html {
 	color: #fff;
 }
 
-.hover-game-tile.contained-tile .featured-game-container .game-card-link .info-container {
-	background: #16191d;
+.section-content.remove-panel {
+	border: none !important;
+}
+
+.stack-row,
+.section-content.remove-panel {
+    background-color: #16191d !important;
+    border: 1px solid #404754;
+    border-radius: 8px;
+	color: #fff;
+}
+
+.hover-game-tile.contained-tile .featured-game-container .game-card-link .info-container,
+.group-event {
+	background-color: #16191d !important;
+	border: 1px solid #404754;
+}
+
+.switcher-items {
 	border:  1px solid #404754;
+	border-radius: 8px;
 }
 
 .profile-avatar-gradient {
-    background: linear-gradient(91deg, rgba(18, 18, 21, .2) 5.83%, rgba(255, 255, 255, .2) 47.76%, rgba(18, 18, 21, .2) 93.93%), #16191d;
+    background: linear-gradient(90deg, rgba(18, 18, 21, .2) 5.83%, rgba(255, 255, 255, .2) 47.76%, rgba(18, 18, 21, .2) 93.93%), #16191d;
+}
+
+.group-forums-category-pill.active,
+.group-forums-category-pill:hover {
+	color: #fff !important;
 }
 
 /* Old UI */
@@ -82,7 +100,7 @@ html {
 
 /* New UI */
 .cover-gradient-overlay {
-    background: #16191d;
+    background: #16191d !important;
 }
 
 /* Borders */
@@ -98,6 +116,9 @@ html {
     border-radius: 8px;
 }
 
+.border {
+	border-color: #404754 !important;
+}
 /* ===========================
    HEADER & NAVIGATION
 =========================== */
@@ -112,10 +133,11 @@ html {
 
 .groups-list-search .groups-list-search-input,
 .input-group-btn .input-dropdown-btn,
-.menu-vertical {
-    background-color: #16191d;
-    border-radius: 8px;
-    border: 1px solid #404754;
+.menu-vertical,
+.chat-search {
+    background-color: #16191d !important;
+    border-radius: 8px !important;
+    border: 1px solid #404754 !important;
 }
 
 /* ===========================
@@ -224,7 +246,7 @@ html {
 	background-image: linear-gradient(140deg, transparent 50%, transparent 100%);
 	opacity: 0.2;
 	border: 1px solid transparent;
-	margin: 0 0 0 15px !important;
+	margin: 10px 15px 15px !important;
 	transform-style: preserve-3d;
 }
 
@@ -254,7 +276,7 @@ html {
 
 .stack .card-list .card-item,
 .subscription-card-item {
-	background-color: transparent;
+	background-color: #16191d !important;
 	border: 1px solid #404754;
 	border-radius: 8px;
 }
@@ -299,7 +321,7 @@ html {
 }
 
 .friend-tile-dropdown {
-	background-color: #16191d;
+	background-color: #16191d !important;
 	border-radius: 8px;
 	box-shadow: 0 0 8px rgba(0,0,0,.3);
 }
@@ -331,32 +353,24 @@ html {
 }
 
 .rbx-left-col {
-	box-shadow: none;
+	box-shadow: none !important;
 }
 
 /* ===========================
    THUMBNAILS
 =========================== */
 .asset-thumb-container,
-.item-card-container {
-	background-color: transparent;
+.item-card-container,
+.thumbnail-2d-container,
+.thumbnail-2d-container img {
+	background-color: transparent !important;
 }
 
 .avatar .avatar-card-image,
-.content .add-friends-icon-container,
 .item-card-thumb-container,
-.profile-accoutrements-slider .accoutrement-item a,
-.thumbnail-2d-container img {
+.profile-accoutrements-slider .accoutrement-item a {
 	background-color: #404754 !important;
 	background-size: 100%;
-}
-
-.thumbnail-2d-container img {
-	border-radius: 8px;
-}
-
-.thumbnail-2d-container {
-	background: #16191d;
 }
 /* ===========================
    TABS HOVER
@@ -456,6 +470,9 @@ input[type=radio] {
     left: 925px;
 }
 
+.slide-item-description {
+	border-top: 0 !important;
+}
 /* Roseal support */
 .search-landing-container,
 .rbx-header .navbar-search .new-dropdown-menu {
@@ -491,7 +508,7 @@ input[type=radio] {
 }
 
 .game-carousel.wide-game-tile-carousel.home-page-carousel .hover-game-tile.grid-tile.focused.old-hover {
-	background: transparent;
+	background-color: transparent;
 }
 
 .game-home-page-container .friend-carousel-container {
@@ -513,7 +530,7 @@ input[type=radio] {
 }
 
 .game-grid.home-game-grid.wide-game-tile-game-grid.game-grid.dynamic-layout-sizing .hover-game-tile.grid-tile.focused.old-hover {
-    background: transparent;
+    background-color: transparent;
 }
 
 [data-rosealfe-cssfixes] .favorite-games-container .game-cards .game-card {
