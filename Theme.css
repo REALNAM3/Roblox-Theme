@@ -2,9 +2,8 @@
    GLOBAL SETTINGS
 =========================== */
 html {
-    display: block;
+	display: block;
 }
-
 /* ===========================
    FONT
 =========================== */
@@ -18,64 +17,79 @@ html {
 .text {
     font-family: "Geist", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
 }
-
 /* ===========================
    DARK THEME ROOT COLORS
 =========================== */
-.dark-theme,
-.dark-theme .content,
-.dark-theme .container-footer,
 #navigation.rbx-left-col,
 #navigation .rbx-scrollbar,
 #navigation .simplebar-content,
 #navigation .simplebar-mask,
-.dark-theme .age-verification-upsell-banner,
+#right-navigation-header,
+.dark-theme,
+.content,
+.container-footer,
 .container-fluid,
+.age-verification-upsell-banner,
 .rbx-navbar-header,
 .navbar-header,
-.dark-theme .select-option,
-.dark-theme .section-content-off,
 .nav.rbx-navbar,
-#right-navigation-header,
-.dark-theme .personalized-bonus-items__container,
-.dark-theme .avatar-card-btns,
-.dark-theme .dropdown-menu,
+.select-option,
+.section-content-off,
+.personalized-bonus-items__container,
+.avatar-card-btns,
+.dropdown-menu,
 .web-blox-css-mui-hjn929.MuiPaper-elevation,
-.dark-theme .menu-vertical .menu-option .menu-secondary {
-    background-color: #16191d !important;
-    color: #fff;
+.menu-vertical .menu-option .menu-secondary,
+.profile-avatar-left {
+	background-color: #16191d !important;
+	color: #fff;
 }
 
-.dark-theme .btn-control-md,
-.dark-theme .age-rating-details,
+.btn-control-md ,
+.age-rating-details,
 .stack .card-list .card-item button.game-server-join-btn,
 .group-wall-deprecation-notice,
 #catalog-react-container .catalog-revamp .topic-carousel .topic,
-.dark-theme .reaction-button.interactable,
+.reaction-button.interactable,
 .bg-surface-300,
 .group-profile-header .contextual-menu-actions-btn,
-.dark-theme .btn-control-sm,
-.dark-theme .menu-vertical .menu-option .menu-secondary-option:active,
-.dark-theme .menu-vertical .menu-option .menu-secondary-option.active,
-.dark-theme .menu-vertical .menu-option .menu-secondary-option:hover,
-.dark-theme .menu-vertical .menu-option .menu-secondary-option:focus,
-.dark-theme .friend-tile-dropdown-button:hover {
+.btn-control-sm,
+.btn-control-xs, 
+.menu-vertical .menu-option .menu-secondary-option:active, 
+.menu-vertical .menu-option .menu-secondary-option.active,
+.menu-vertical .menu-option .menu-secondary-option:hover, 
+.menu-vertical .menu-option .menu-secondary-option:focus,
+.friend-tile-dropdown-button:hover {
     background: #404754 !important;
-    color: #fff;
+	color: #fff;
 }
 
-.dark-theme .hover-game-tile.contained-tile .featured-game-container .game-card-link .info-container {
+.hover-game-tile.contained-tile .featured-game-container .game-card-link .info-container {
+	background: #16191d;
+	border:  1px solid #404754;
+}
+
+.profile-avatar-gradient {
+    background: linear-gradient(91deg, rgba(18, 18, 21, .2) 5.83%, rgba(255, 255, 255, .2) 47.76%, rgba(18, 18, 21, .2) 93.93%), #16191d;
+}
+
+/* Old UI */
+.profile-stats {
+	background: #16191d;
+}
+
+/* New UI */
+.cover-gradient-overlay {
     background: #16191d;
-    border: 1px solid #404754;
 }
 
 /* Borders */
 #navigation {
-    border-right: 1px solid #16191d;
+	border-right: 1px solid #16191d;
 }
 
 .container-fluid {
-    border-bottom: 1px solid #16191d;
+	border-bottom: 1px solid #16191d;
 }
 
 .nav-tabs {
@@ -85,18 +99,18 @@ html {
 /* ===========================
    HEADER & NAVIGATION
 =========================== */
-.dark-theme .rbx-header .rbx-navbar li:hover {
-    border-radius: 8px;
-    background-color: #16191d;
+.rbx-header .rbx-navbar li:hover {
+	border-radius: 8px;
+	background-color: #16191d;
 }
 
-.dark-theme .rbx-header .navbar-search {
-    background-color: #16191d;
+.rbx-header .navbar-search {
+	background-color: #16191d;
 }
 
 .groups-list-search .groups-list-search-input,
-.dark-theme .input-group-btn .input-dropdown-btn,
-.dark-theme .menu-vertical {
+.input-group-btn .input-dropdown-btn,
+.menu-vertical {
     background-color: #16191d;
     border-radius: 8px;
     border: 1px solid #404754;
@@ -105,261 +119,266 @@ html {
 /* ===========================
    CATALOG
 =========================== */
-.dark-theme .catalog-container .sticky .topic-container {
-    z-index: 999;
-    position: static;
-    display: flex;
-    overflow: hidden;
-    scroll-behavior: smooth;
-    height: 72px;
-    padding-top: 12px;
-    background-color: transparent;
-    border-radius: 8px;
+.catalog-container .sticky .topic-container {
+	z-index: 999;
+	position: static;
+	display: flex;
+	overflow: hidden;
+	scroll-behavior: smooth;
+	height: 72px;
+	padding-top: 12px;
+	background-color: transparent;
+	border-radius: 8px;
 }
 
 #catalog-react-container .catalog-revamp .search-container .input-group-btn-category .dropdown-menu,
-.dark-theme #catalog-react-container .sticky .catalog-header,
-.dark-theme #catalog-react-page .search-bars,
+#catalog-react-container .sticky .catalog-header,
+#catalog-react-page .search-bars,
 #catalog-react-container .sticky .topic-carousel,
 .topic-container .topic-navigation-button {
-    background: #16191d;
+	background: #16191d;
 }
-
 /* ===========================
    PROFILE
 =========================== */
-.dark-theme .avatar-card-container {
-    background: transparent;
+.avatar-card-container {
+	background: transparent;
 }
 
-.dark-theme .profile-header-top .header-caption .header-names .header-title h1.profile-name {
-    color: #16191d;
-    padding: 5px;
-    border-radius: 8px;
-    background-color: #fff;
+.profile-header-top .header-caption .header-names .header-title h1.profile-name {
+	color: #16191d;
+	padding: 5px;
+	border-radius: 8px;
+	background-color: #fff;
 }
 
-.dark-theme .profile-avatar-right .profile-avatar-mask {
-    background-color: #16191d;
-    color: #fff;
+.profile-avatar-right .profile-avatar-mask {
+	background-color: #16191d;
+	color: #fff;
 }
 
 /* ===========================
    TABS & CONTENT
 =========================== */
-.dark-theme .rbx-tab .rbx-tab-heading,
-.dark-theme .rbx-tabs-horizontal .rbx-tab .rbx-tab-heading,
-.dark-theme .rbx-tabs-horizontal .nav-tabs {
-    background-color: #16191d;
-    color: #fff;
+.rbx-tab .rbx-tab-heading,
+.rbx-tabs-horizontal .rbx-tab .rbx-tab-heading,
+.rbx-tabs-horizontal .nav-tabs {
+	background-color: #16191d;
+	color: #fff;
 }
 
-.dark-theme .slide-switcher .slide-item-container .slide-item-container-right,
-.dark-theme .slide-switcher .slide-item-container .slide-item-container-left {
-    background-color: #16191d;
-    color: #fff;
+.slide-switcher .slide-item-container .slide-item-container-right,
+.slide-switcher .slide-item-container .slide-item-container-left {
+	background-color: #16191d;
+	color: #fff;
 }
 
 /* Shared border sets */
-.dark-theme .not-approved-page-content .not-approved-page,
-.dark-theme .account-switcher-list .account-selection-list-item .account-selection,
-.dark-theme .profile-statistics>.section-content,
-.dark-theme .friends-content .avatar-card-content,
-.dark-theme .rbx-tabs-horizontal .nav-tabs,
-.dark-theme .group-wall,
-.dark-theme .group-members-list,
-.dark-theme .shout-container,
-.dark-theme #settings-container .menu-vertical,
-.dark-theme .platform-events-details-container,
+.not-approved-page-content .not-approved-page,
+.account-switcher-list .account-selection-list-item .account-selection,
+.profile-statistics > .section-content,
+.friends-content .avatar-card-content,
+.rbx-tabs-horizontal .nav-tabs,
+.group-wall,
+.group-members-list,
+.shout-container,
+#settings-container .menu-vertical,
+.platform-events-details-container,
 .announcement-display {
-    background: #16191d;
-    border: 1px solid #404754;
-    border-radius: 8px;
+	background: #16191d;
+	border: 1px solid #404754;
+	border-radius: 8px;
 }
 
 /* ===========================
    MESSAGES
 =========================== */
-.dark-theme .messages .messageDivider,
-.dark-theme .messages .messageDivider.message-news {
-    background-color: #16191d;
-    color: #fff;
+.messages .messageDivider,
+.messages .messageDivider.message-news {
+	background-color: #16191d;
+	color: #fff;
 }
 
-.dark-theme .messages .messageDivider.read,
-.dark-theme .messages .messageDivider .read {
-    color: hsla(0, 0%, 100%, .7);
-    background-color: #16191d;
+.messages .messageDivider.read,
+.messages .messageDivider .read {
+	color: hsla(0, 0%, 100%, .7);
+	background-color: #16191d;
 }
 
 /* ===========================
    FORMS
 =========================== */
-.dark-theme .form-control {
-    background-color: #16191d !important;
-    border-color: #404754;
-    color: #fff;
+.form-control {
+	background-color: #16191d !important;
+	border-color: #404754;
+	color: #fff;
 }
 
 /* ===========================
    GAME CARDS
 =========================== */
-.dark-theme .game-card-container {
-    background-size: 200% auto;
-    background-image: linear-gradient(140deg, transparent 50%, transparent 100%);
-    opacity: 0.2;
-    border: 1px solid transparent;
-    margin: 0 0 0 15px !important;
-    transform-style: preserve-3d;
+.game-card-container {
+	background-size: 200% auto;
+	background-image: linear-gradient(140deg, transparent 50%, transparent 100%);
+	opacity: 0.2;
+	border: 1px solid transparent;
+	margin: 0 0 0 15px !important;
+	transform-style: preserve-3d;
 }
 
-.dark-theme .game-card-container:hover {
-    animation: DarkGradientAnimator 0.5s forwards;
+.game-card-container:hover {
+	animation: DarkGradientAnimator 0.5s forwards;
 }
 
 .game-carousel.expand-home-content-disabled .grid-item-container {
-    margin: 15px 0 15px 10px !important;
+	margin: 15px 0 15px 10px !important;
 }
 
 .game-card-thumb-container,
 .game-card-thumb-container .game-card-thumb,
 .game-tile-list .game-tile .game-card-container {
-    width: 150px;
+	width: 150px;
 }
 
-[data-rosealfe-cssfixes] .favorite-games-container .game-cards .game-card {
-    width: 166px;
+
+
+.stack .card-list .card-item .button .game-server-join-btn {
+	margin: 12px auto 0;
+	font-size: 12px;
+	font-weight: 500;
+	height: auto;
+	background-color: white;
+	color: #16191d;
+	border: transparent;
 }
 
-.dark-theme .stack .card-list .card-item .button .game-server-join-btn {
-    margin: 12px auto 0;
-    font-size: 12px;
-    font-weight: 500;
-    height: auto;
-    background-color: white;
-    color: #16191d;
-    border: transparent;
-}
-
-.dark-theme .stack .card-list .card-item,
-.dark-theme .subscription-card-item {
-    background-color: transparent;
-    border: 1px solid #404754;
-    border-radius: 8px;
+.stack .card-list .card-item,
+.subscription-card-item {
+	background-color: transparent;
+	border: 1px solid #404754;
+	border-radius: 8px;
 }
 
 /* ===========================
    SCROLL
 =========================== */
-.dark-theme .scroller.prev.disabled {
-    background-image: linear-gradient(-45deg, black, transparent);
+.scroller.prev.disabled {
+	background-image: linear-gradient(-45deg, black, transparent);
 }
 
-.dark-theme .scroller.next.disabled {
-    background-image: linear-gradient(45deg, black, transparent);
+.scroller.next.disabled {
+	background-image: linear-gradient(45deg, black, transparent);
 }
 
-.dark-theme .scroller.prev,
-.dark-theme .scroller.next {
-    border-radius: 0;
-    backdrop-filter: blur(50px);
+.scroller.prev,
+.scroller.next {
+	border-radius: 0;
+	backdrop-filter: blur(50px);
 }
 
-.dark-theme .scroller.prev {
-    left: -40px;
-    background-image: linear-gradient(-45deg, #ffffff52, transparent);
+.scroller.prev {
+	left: -40px;
+	background-image: linear-gradient(-45deg, #ffffff52, transparent);
 }
 
-.dark-theme .scroller.next {
-    right: -40px;
-    background-image: linear-gradient(45deg, #ffffff52, transparent);
-    transform-style: preserve-3d;
+.scroller.next {
+	right: -40px;
+	background-image: linear-gradient(45deg, #ffffff52, transparent);
+	transform-style: preserve-3d;
 }
 
 /* ===========================
    VERTICAL MENU
 =========================== */
-.dark-theme .rbx-tabs-vertical .category-tabs .menu-vertical {
-    background-color: #16191d;
-    border-radius: 8px;
-    color: #fff;
-    padding: 10px;
-    border: 1px solid #404754;
+.rbx-tabs-vertical .category-tabs .menu-vertical {
+	background-color: #16191d;
+	border-radius: 8px;
+	color: #fff;
+	padding: 10px;
+	border: 1px solid #404754;
 }
 
-.dark-theme .friend-tile-dropdown {
-    background-color: #16191d;
-    border-radius: 8px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, .3);
+.friend-tile-dropdown {
+	background-color: #16191d;
+	border-radius: 8px;
+	box-shadow: 0 0 8px rgba(0,0,0,.3);
 }
 
 /* ===========================
    PLATFORM EVENTS
 =========================== */
-.dark-theme .platform-events-details-container {
-    margin-top: 180px;
-    width: 120%;
-    gap: 80px;
-    opacity: 1;
-    padding: 11px;
-    background-color: transparent;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 8px;
-    backdrop-filter: blur(20px);
+.platform-events-details-container {
+	margin-top: 180px;
+	width: 120%;
+	gap: 80px;
+	opacity: 1;
+	padding: 11px;
+	background-color: transparent;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 8px;
+	backdrop-filter: blur(20px);
 }
 
 /* ===========================
    MODALS
 =========================== */
-.dark-theme .modal-dialog .modal-content {
-    background-color: #16191d;
-    padding: 5px;
-    border-radius: 8px;
+.modal-dialog .modal-content {
+	background-color: #16191d;
+	padding: 5px;
+	border-radius: 8px;
 }
 
-.dark-theme .rbx-left-col {
-    box-shadow: none;
+.rbx-left-col {
+	box-shadow: none;
 }
 
 /* ===========================
    THUMBNAILS
 =========================== */
-.dark-theme .asset-thumb-container,
-.dark-theme .item-card-container .item-card-thumb-container {
-    background-color: transparent;
+.asset-thumb-container,
+.item-card-container .item-card-thumb-container {
+	background-color: transparent;
+}
+
+
+.avatar .avatar-card-image,
+.content .add-friends-icon-container {
+	background-color: #404754 !important;
+	background-size: 100%;
 }
 
 .thumbnail-2d-container img {
-    background-color: rgba(22, 25, 29, 0.5);
-    background-size: 100%;
-    border-radius: 8px;
+	border-radius: 8px;
 }
 
+.thumbnail-2d-container {
+	background: #16191d;
+}
 /* ===========================
    TABS HOVER
 =========================== */
-.dark-theme .rbx-tabs-horizontal #horizontal-tabs .rbx-tab:not(.active) a:not(:hover) {
-    background-color: transparent;
-    color: #fff;
+.rbx-tabs-horizontal #horizontal-tabs .rbx-tab:not(.active) a:not(:hover) {
+	background-color: transparent;
+	color: #fff;
 }
 
 /* ===========================
    PLAY BUTTON ANIMATIONS
 =========================== */
-.dark-theme .btn-common-play-game-lg,
-.dark-theme .preferred-region-btn.custom-join-btn,
-.dark-theme .btn-growth-sm {
-    background-color: transparent;
-    background-image: linear-gradient(-45deg, #00000070, transparent);
-    border-radius: 8px;
+.btn-common-play-game-lg,
+.preferred-region-btn.custom-join-btn,
+.btn-growth-sm {
+	background-color: transparent;
+	background-image: linear-gradient(-45deg, #00000070, transparent);
+	border-radius: 8px;
 }
 
-.dark-theme .btn-common-play-game-lg:hover,
-.dark-theme .preferred-region-btn.custom-join-btn:hover,
-.dark-theme .btn-growth-sm:hover {
-    animation: DarkPlayButtonAnimator .5s forwards;
+.btn-common-play-game-lg:hover,
+.preferred-region-btn.custom-join-btn:hover,
+.btn-growth-sm:hover {
+	animation: DarkPlayButtonAnimator .5s forwards;
 }
 
 /* ===========================
@@ -383,50 +402,46 @@ html {
 .notif-row-right-button,
 .web-blox-css-tss-lo77dr-Button-contained,
 input[type=radio] {
-    background-color: #1E90FF !important;
-    fill: #1E90FF !important;
-    accent-color: #1E90FF;
-
-    &:hover {
-        transition: filter 0.15s ease;
-        filter: brightness(110%);
-    }
+	background-color: #1E90FF !important;
+	fill: #1E90FF !important;
+	accent-color: #1E90FF;
+	&:hover {
+		transition: filter 0.15s ease;
+		filter: brightness(110%);
+	}
 }
 
 .icon-radio-check-circle-filled {
-    border: 6px solid #1E90FF !important;
+	border: 6px solid #1E90FF !important;
 }
 
 /* Overrides for accent color changes */
-.dark-theme {
-
-    #upgrade-now-button,
-    .apply-button:disabled,
-    .event-follow-button,
-    .notif-row-right-button.btn-primary-xs,
-    .web-blox-css-mui-1t2bqnt {
-        background-color: #fff !important;
-    }
+#upgrade-now-button,
+.apply-button:disabled,
+.event-follow-button,
+.btn-primary-xs,
+.web-blox-css-mui-1t2bqnt {
+	background-color: #fff !important;
 }
 
 /* General fixes & improvements */
 .css-vx3gzi-heroUnitPill {
-    z-index: 1;
+	z-index: 1;
 }
 
 .text-error {
-    display: flex;
-    align-items: center;
-    gap: 4px;
+	display: flex;
+	align-items: center;
+	gap: 4px;
 }
 
-.dark-theme .select-option {
-    background-color: #16191d !important;
+.select-option {
+	background-color: #16191d !important;
 }
 
 .event-unfollow-button,
 .rbx-refresh {
-    background: none !important;
+	background: none !important;
 }
 
 .group-details .group-members-list .member {
@@ -440,28 +455,27 @@ input[type=radio] {
 }
 
 /* Roseal support */
-.dark-theme .search-landing-container,
-.dark-theme .rbx-header .navbar-search .new-dropdown-menu {
-    background-color: #16191d;
-    border-radius: 0 0 8px 8px;
+.search-landing-container,
+.rbx-header .navbar-search .new-dropdown-menu {
+	background-color: #16191d;
+	border-radius: 0 0 8px 8px;
 }
 
 .profile-platform-container .group-container.shown {
-    display: inline-block;
-    margin: 15px 5px;
+	display: inline-block;
+	margin: 15px 5px;
 }
 
 .roseal-badges-container .roseal-badges .new-badges-grids-container .new-badges-grid-container .new-badges-grid .badge-container,
-.dark-theme .select-group .select-option,
-.dark-theme .select-group .rbx-select,
-.dark-theme .rbx-select-group .select-option,
-.dark-theme .rbx-select-group .rbx-select {
-    background: #16191d;
-    border: 1px solid #404754;
+.select-group .select-option, .select-group .rbx-select, 
+.rbx-select-group .select-option, 
+.rbx-select-group .rbx-select {
+	background: #16191d;
+	border: 1px solid #404754;
 }
 
 .roseal-pill-toggle,
-.dark-theme .rbx-header .navbar-search .navbar-search-option.new-selected,
+.rbx-header .navbar-search .navbar-search-option.new-selected,
 #roseal-running-game-instances-container .stackable-card-list .card-item .game-server-details .rbx-buttons-section:not(.rbx-private-buttons-section) .copy-server-link-btn,
 .roseal-filters-container .filter-items-container .filter-select.btn-secondary-md,
 #roseal-running-game-instances-container .regenerate-server-link-btn,
@@ -474,7 +488,7 @@ input[type=radio] {
 }
 
 .game-carousel.wide-game-tile-carousel.home-page-carousel .hover-game-tile.grid-tile.focused.old-hover {
-    background: transparent;
+	background: transparent;
 }
 
 .game-home-page-container .friend-carousel-container {
@@ -482,11 +496,10 @@ input[type=radio] {
 }
 
 .roseal-menu-secondary-container .roseal-menu-secondary-option-content,
-.roseal-file-input,
-.transparent-background-menu .menu-option:not(.roseal-menu-secondary-option),
-.transparent-background-menu .menu-option-content:not(.roseal-menu-secondary-option-content) {
+.roseal-file-input, 
+.transparent-background-menu .menu-option:not(.roseal-menu-secondary-option), .transparent-background-menu .menu-option-content:not(.roseal-menu-secondary-option-content) {
     background-color: #16191d !important;
-    color: #fff;
+	color: #fff;
 }
 
 .announcement-display {
@@ -495,68 +508,69 @@ input[type=radio] {
     padding-left: 10px;
 }
 
+.game-grid.home-game-grid.wide-game-tile-game-grid.game-grid.dynamic-layout-sizing .hover-game-tile.grid-tile.focused.old-hover {
+    background: transparent;
+}
 
-
+[data-rosealfe-cssfixes] .favorite-games-container .game-cards .game-card {
+    width: 166px;
+}
 /* Button animations */
 @keyframes DarkPlayButtonAnimator {
-    from {
-        background-color: #1E90FF;
-        background-image: linear-gradient(-45deg, #00000070, transparent);
-    }
-
-    to {
-        background-color: #000;
-        background-image: linear-gradient(45deg, #ffffff2e, transparent);
-        transform: perspective(1000px) scale(1.1) rotateX(-360deg) rotateY(10deg);
-    }
+	from {
+		background-color: #1E90FF;
+		background-image: linear-gradient(-45deg, #00000070, transparent);
+	}
+	to {
+		background-color: #000;
+		background-image: linear-gradient(45deg, #ffffff2e, transparent);
+		transform: perspective(1000px) scale(1.1) rotateX(-360deg) rotateY(10deg);
+	}
 }
 
 @keyframes DarkPlayButtonAnimatorReverse {
-    from {
-        background-color: #000;
-        background-image: linear-gradient(45deg, #ffffff2e, transparent);
-        transform: perspective(1000px) scale(1.1) rotateX(-360deg) rotateY(10deg);
-    }
-
-    to {
-        background-color: #1E90FF;
-        background-image: linear-gradient(-45deg, #00000070, transparent);
-    }
+	from {
+		background-color: #000;
+		background-image: linear-gradient(45deg, #ffffff2e, transparent);
+		transform: perspective(1000px) scale(1.1) rotateX(-360deg) rotateY(10deg);
+	}
+	to {
+		background-color: #1E90FF;
+		background-image: linear-gradient(-45deg, #00000070, transparent);
+	}
 }
 
 /* ===========================
    GAME CARD ANIMATIONS
 =========================== */
 @keyframes DarkGradientAnimator {
-    from {
-        background-image: linear-gradient(140deg, transparent 50%, transparent 100%);
-        opacity: 0.2;
-        background-position: 0px 150px;
-    }
-
-    to {
-        background-image: linear-gradient(140deg, transparent 50%, #ffffff5e 100%);
-        opacity: 1;
-        background-position: 0px 10px;
-        border: 1px solid #ffffff5e;
-        backdrop-filter: blur(50px);
-        transform: perspective(1000px) scale(1.1) rotateX(10deg) rotateY(-10deg);
-        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-    }
+	from {
+		background-image: linear-gradient(140deg, transparent 50%, transparent 100%);
+		opacity: 0.2;
+		background-position: 0px 150px;
+	}
+	to {
+		background-image: linear-gradient(140deg, transparent 50%, #ffffff5e 100%);
+		opacity: 1;
+		background-position: 0px 10px;
+		border: 1px solid #ffffff5e;
+		backdrop-filter: blur(50px);
+		transform: perspective(1000px) scale(1.1) rotateX(10deg) rotateY(-10deg);
+		box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+	}
 }
 
 @keyframes DarkGradientAnimatorReverse {
-    from {
-        background-image: linear-gradient(140deg, transparent 50%, #ffffff5e 100%);
-        opacity: 1;
-        background-position: 0px 10px;
-        transform: perspective(1000px) scale(1.1) rotateX(10deg) rotateY(-10deg);
-    }
-
-    to {
-        background-image: linear-gradient(140deg, transparent 50%, transparent 100%);
-        opacity: 0.2;
-        border: 1px solid transparent;
-        background-position: 0px 150px;
-    }
+	from {
+		background-image: linear-gradient(140deg, transparent 50%, #ffffff5e 100%);
+		opacity: 1;
+		background-position: 0px 10px;
+		transform: perspective(1000px) scale(1.1) rotateX(10deg) rotateY(-10deg);
+	}
+	to {
+		background-image: linear-gradient(140deg, transparent 50%, transparent 100%);
+		opacity: 0.2;
+		border: 1px solid transparent;
+		background-position: 0px 150px;
+	}
 }
