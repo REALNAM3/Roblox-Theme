@@ -2,11 +2,20 @@
    GLOBAL SETTINGS
 =========================== */
 html {
-	display: block;
+	display: block; 
 }
-/* ===========================
-   FONT
-=========================== */
+
+:root {
+    --bg: /*[[color-background]]*/ #16191d;
+    --fg: /*[[color-foreground]]*/ #404754;
+    --ac: /*[[color-accent]]*/ #1E90FF;
+}
+
+* {
+    --bgc: var(--bg);
+    --fgc: var(--fg);
+    --acc: var(--ac);
+}
 
 /* ===========================
    DARK THEME ROOT COLORS
@@ -29,14 +38,23 @@ html {
 .section-content-off,
 .personalized-bonus-items__container,
 .avatar-card-btns,
-.dropdown-menu,
 .slide-item-container-left,
 .slide-item-container-right,
 .web-blox-css-mui-hjn929.MuiPaper-elevation,
 .menu-vertical .menu-option .menu-secondary,
 .profile-avatar-left,
-.chat-friend-list {
-	background-color: #16191d !important;
+.chat-friend-list,
+.groups-list-sidebar,
+.group-section-content,
+.slide-switcher.groups,
+.section-content,
+.messageDivider,
+.group-open,
+.layer,
+.filter-options-container,
+.shopping-cart-modal,
+.chat-header {
+	background-color: var(--bg) !important;
 	color: #fff !important;
 }
 
@@ -50,14 +68,16 @@ html {
 .group-profile-header .contextual-menu-actions-btn,
 .btn-control-sm,
 .btn-control-xs,
+.btn-toggle,
 .nav-tabs,
 .group-forums-category-pill,
+.message-banner,
 .menu-vertical .menu-option .menu-secondary-option:active, 
 .menu-vertical .menu-option .menu-secondary-option.active,
 .menu-vertical .menu-option .menu-secondary-option:hover, 
 .menu-vertical .menu-option .menu-secondary-option:focus,
 .friend-tile-dropdown-button:hover {
-    background: #404754 !important;
+    background: var(--fg) !important;
 	color: #fff;
 }
 
@@ -66,26 +86,30 @@ html {
 }
 
 .stack-row,
-.section-content.remove-panel {
-    background-color: #16191d !important;
-    border: 1px solid #404754;
+.section-content.remove-panel,
+.groups-list-items-container::-webkit-scrollbar-thumb {
+    background-color: var(--bg) !important;
+    border: 1px solid var(--fg);
     border-radius: 8px;
 	color: #fff;
 }
 
 .hover-game-tile.contained-tile .featured-game-container .game-card-link .info-container,
-.group-event {
-	background-color: #16191d !important;
-	border: 1px solid #404754;
+.group-event,
+.filters-modal-container,
+.dropdown-menu {
+	background-color: var(--bg) !important;
+	border: 1px solid var(--fg);
+	border-radius: 8px;
 }
 
 .switcher-items {
-	border:  1px solid #404754;
+	border:  1px solid var(--fg);
 	border-radius: 8px;
 }
 
 .profile-avatar-gradient {
-    background: linear-gradient(90deg, rgba(18, 18, 21, .2) 5.83%, rgba(255, 255, 255, .2) 47.76%, rgba(18, 18, 21, .2) 93.93%), #16191d;
+    background: linear-gradient(90deg, rgba(18, 18, 21, .2) 5.83%, rgba(255, 255, 255, .2) 47.76%, rgba(18, 18, 21, .2) 93.93%), var(--bg);
 }
 
 .group-forums-category-pill.active,
@@ -95,21 +119,21 @@ html {
 
 /* Old UI */
 .profile-stats {
-	background: #16191d;
+	background: var(--bg);
 }
 
 /* New UI */
 .cover-gradient-overlay {
-    background: #16191d !important;
+    background: var(--bg) !important;
 }
 
 /* Borders */
 #navigation {
-	border-right: 1px solid #16191d;
+	border-right: 1px solid var(--bg);
 }
 
 .container-fluid {
-	border-bottom: 1px solid #16191d;
+	border-bottom: 1px solid var(--bg);
 }
 
 .nav-tabs {
@@ -117,27 +141,28 @@ html {
 }
 
 .border {
-	border-color: #404754 !important;
+	border-color: var(--fg) !important;
 }
 /* ===========================
    HEADER & NAVIGATION
 =========================== */
 .rbx-header .rbx-navbar li:hover {
 	border-radius: 8px;
-	background-color: #16191d;
+	background-color: var(--bg);
 }
 
 .rbx-header .navbar-search {
-	background-color: #16191d;
+	background-color: var(--bg);
 }
 
 .groups-list-search .groups-list-search-input,
 .input-group-btn .input-dropdown-btn,
+.passkey-upsell-banner,
 .menu-vertical,
 .chat-search {
-    background-color: #16191d !important;
+    background-color: var(--bg) !important;
     border-radius: 8px !important;
-    border: 1px solid #404754 !important;
+    border: 1px solid var(--fg) !important;
 }
 
 /* ===========================
@@ -160,7 +185,7 @@ html {
 #catalog-react-page .search-bars,
 #catalog-react-container .sticky .topic-carousel,
 .topic-container .topic-navigation-button {
-	background: #16191d;
+	background: var(--bg);
 }
 /* ===========================
    PROFILE
@@ -170,14 +195,14 @@ html {
 }
 
 .profile-header-top .header-caption .header-names .header-title h1.profile-name {
-	color: #16191d;
+	color: var(--bg);
 	padding: 5px;
 	border-radius: 8px;
 	background-color: #fff;
 }
 
 .profile-avatar-right .profile-avatar-mask {
-	background-color: #16191d;
+	background-color: var(--bg);
 	color: #fff;
 }
 
@@ -187,17 +212,16 @@ html {
 .rbx-tab .rbx-tab-heading,
 .rbx-tabs-horizontal .rbx-tab .rbx-tab-heading,
 .rbx-tabs-horizontal {
-	background-color: #16191d;
+	background-color: var(--bg);
 	color: #fff;
 }
 
 .slide-switcher .slide-item-container .slide-item-container-right,
 .slide-switcher .slide-item-container .slide-item-container-left {
-	background-color: #16191d;
+	background-color: var(--bg);
 	color: #fff;
 }
 
-/* Shared border sets */
 .not-approved-page-content .not-approved-page,
 .account-switcher-list .account-selection-list-item .account-selection,
 .profile-statistics > .section-content,
@@ -209,8 +233,8 @@ html {
 #settings-container .menu-vertical,
 .platform-events-details-container,
 .announcement-display {
-	background: #16191d;
-	border: 1px solid #404754;
+	background: var(--bg);
+	border: 1px solid var(--fg);
 	border-radius: 8px;
 }
 
@@ -219,22 +243,22 @@ html {
 =========================== */
 .messages .messageDivider,
 .messages .messageDivider.message-news {
-	background-color: #16191d;
+	background-color: var(--bg);
 	color: #fff;
 }
 
 .messages .messageDivider.read,
 .messages .messageDivider .read {
 	color: hsla(0, 0%, 100%, .7);
-	background-color: #16191d;
+	background-color: var(--bg);
 }
 
 /* ===========================
    FORMS
 =========================== */
 .form-control {
-	background-color: #16191d !important;
-	border-color: #404754;
+	background-color: var(--bg) !important;
+	border-color: var(--fg);
 	color: #fff;
 }
 
@@ -256,6 +280,7 @@ html {
 
 .game-carousel.expand-home-content-disabled .grid-item-container {
 	margin: 15px 0 15px 10px !important;
+	flex: 1 1 auto !important;
 }
 
 .game-card-thumb-container,
@@ -270,42 +295,39 @@ html {
 	font-weight: 500;
 	height: auto;
 	background-color: white;
-	color: #16191d;
+	color: var(--bg);
 	border: transparent;
 }
 
 .stack .card-list .card-item,
 .subscription-card-item {
-	background-color: #16191d !important;
-	border: 1px solid #404754;
+	background-color: var(--bg) !important;
+	border: 1px solid var(--fg);
 	border-radius: 8px;
 }
 
 /* ===========================
    SCROLL
 =========================== */
-.scroller.prev.disabled {
-	background-image: linear-gradient(-45deg, black, transparent);
-}
-
+.scroller.prev.disabled,
 .scroller.next.disabled {
-	background-image: linear-gradient(45deg, black, transparent);
+	background: var(--bg);
 }
 
 .scroller.prev,
 .scroller.next {
 	border-radius: 0;
-	backdrop-filter: blur(50px);
+	backdrop-filter: blur(25px);
 }
 
 .scroller.prev {
 	left: -40px;
-	background-image: linear-gradient(-45deg, #ffffff52, transparent);
+	background: var(--bg);
 }
 
 .scroller.next {
 	right: -40px;
-	background-image: linear-gradient(45deg, #ffffff52, transparent);
+	background: var(--bg);
 	transform-style: preserve-3d;
 }
 
@@ -313,15 +335,15 @@ html {
    VERTICAL MENU
 =========================== */
 .rbx-tabs-vertical .category-tabs .menu-vertical {
-	background-color: #16191d;
+	background-color: var(--bg);
 	border-radius: 8px;
 	color: #fff;
 	padding: 10px;
-	border: 1px solid #404754;
+	border: 1px solid var(--fg);
 }
 
 .friend-tile-dropdown {
-	background-color: #16191d !important;
+	background-color: var(--bg) !important;
 	border-radius: 8px;
 	box-shadow: 0 0 8px rgba(0,0,0,.3);
 }
@@ -347,7 +369,7 @@ html {
    MODALS
 =========================== */
 .modal-dialog .modal-content {
-	background-color: #16191d;
+	background-color: var(--bg);
 	padding: 5px;
 	border-radius: 8px;
 }
@@ -369,9 +391,10 @@ html {
 .avatar .avatar-card-image,
 .item-card-thumb-container,
 .profile-accoutrements-slider .accoutrement-item a {
-	background-color: #404754 !important;
+	background-color: var(--fg) !important;
 	background-size: 100%;
 }
+
 /* ===========================
    TABS HOVER
 =========================== */
@@ -418,9 +441,9 @@ html {
 .notif-row-right-button,
 .web-blox-css-tss-lo77dr-Button-contained,
 input[type=radio] {
-	background-color: #1E90FF !important;
-	fill: #1E90FF !important;
-	accent-color: #1E90FF;
+	background-color: var(--ac) !important;
+	fill: var(--ac) !important;
+	accent-color: var(--ac);
 	&:hover {
 		transition: filter 0.15s ease;
 		filter: brightness(110%);
@@ -428,10 +451,9 @@ input[type=radio] {
 }
 
 .icon-radio-check-circle-filled {
-	border: 6px solid #1E90FF !important;
+	border: 6px solid var(--ac) !important;
 }
 
-/* Overrides for accent color changes */
 #upgrade-now-button,
 .apply-button:disabled,
 .event-follow-button,
@@ -452,7 +474,7 @@ input[type=radio] {
 }
 
 .select-option {
-	background-color: #16191d !important;
+	background-color: var(--bg) !important;
 }
 
 .event-unfollow-button,
@@ -473,10 +495,11 @@ input[type=radio] {
 .slide-item-description {
 	border-top: 0 !important;
 }
+
 /* Roseal support */
 .search-landing-container,
 .rbx-header .navbar-search .new-dropdown-menu {
-	background-color: #16191d;
+	background-color: var(--bg);
 	border-radius: 0 0 8px 8px;
 }
 
@@ -490,8 +513,8 @@ input[type=radio] {
 .friends-filter-searchbar-container,
 .rbx-select-group .select-option, 
 .rbx-select-group .rbx-select {
-	background: #16191d;
-	border: 1px solid #404754;
+	background: var(--bg);
+	border: 1px solid var(--fg);
 }
 
 .roseal-pill-toggle,
@@ -500,7 +523,7 @@ input[type=radio] {
 .roseal-filters-container .filter-items-container .filter-select.btn-secondary-md,
 #roseal-running-game-instances-container .regenerate-server-link-btn,
 #roseal-running-game-instances-container .rbx-private-game-server-copy-link {
-    background-color: #404754 !important;
+    background-color: var(--fg) !important;
 }
 
 .home-page-games-list {
@@ -519,7 +542,7 @@ input[type=radio] {
 .roseal-file-input,
 .user-profile-pop-up-text,
 .transparent-background-menu .menu-option:not(.roseal-menu-secondary-option), .transparent-background-menu .menu-option-content:not(.roseal-menu-secondary-option-content) {
-    background-color: #16191d !important;
+    background-color: var(--bg) !important;
 	color: #fff;
 }
 
@@ -536,14 +559,15 @@ input[type=radio] {
 [data-rosealfe-cssfixes] .favorite-games-container .game-cards .game-card {
     width: 166px;
 }
+
 /* Button animations */
 @keyframes DarkPlayButtonAnimator {
 	from {
-		background-color: #1E90FF;
+		background-color: var(--ac);
 		background-image: linear-gradient(-45deg, #00000070, transparent);
 	}
 	to {
-		background-color: #000;
+		background-color: var(--bg);
 		background-image: linear-gradient(45deg, #ffffff2e, transparent);
 		transform: perspective(1000px) scale(1.1) rotateX(-360deg) rotateY(10deg);
 	}
@@ -551,12 +575,12 @@ input[type=radio] {
 
 @keyframes DarkPlayButtonAnimatorReverse {
 	from {
-		background-color: #000;
+		background-color: var(--bg);
 		background-image: linear-gradient(45deg, #ffffff2e, transparent);
 		transform: perspective(1000px) scale(1.1) rotateX(-360deg) rotateY(10deg);
 	}
 	to {
-		background-color: #1E90FF;
+		background-color: var(--ac);
 		background-image: linear-gradient(-45deg, #00000070, transparent);
 	}
 }
@@ -567,11 +591,13 @@ input[type=radio] {
 @keyframes DarkGradientAnimator {
 	from {
 		background-image: linear-gradient(140deg, transparent 50%, transparent 100%);
+		background-color: var(--bg) !important;
 		opacity: 0.2;
 		background-position: 0px 150px;
 	}
 	to {
 		background-image: linear-gradient(140deg, transparent 50%, #ffffff5e 100%);
+		background-color: var(--bg) !important;
 		opacity: 1;
 		background-position: 0px 10px;
 		border: 1px solid #ffffff5e;
@@ -584,12 +610,14 @@ input[type=radio] {
 @keyframes DarkGradientAnimatorReverse {
 	from {
 		background-image: linear-gradient(140deg, transparent 50%, #ffffff5e 100%);
+		background-color: var(--bg) !important;
 		opacity: 1;
 		background-position: 0px 10px;
 		transform: perspective(1000px) scale(1.1) rotateX(10deg) rotateY(-10deg);
 	}
 	to {
 		background-image: linear-gradient(140deg, transparent 50%, transparent 100%);
+		background-color: var(--bg) !important;
 		opacity: 0.2;
 		border: 1px solid transparent;
 		background-position: 0px 150px;
