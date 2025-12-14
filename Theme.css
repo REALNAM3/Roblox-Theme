@@ -2,19 +2,22 @@
    GLOBAL SETTINGS
 =========================== */
 html {
-	display: block; 
+	display: block;
 }
 
 :root {
-    --bg: /*[[color-background]]*/ #16191d;
-    --fg: /*[[color-foreground]]*/ #404754;
-    --ac: /*[[color-accent]]*/ #1E90FF;
+	--bg: /*[[color-background]]*/
+	#16191d;
+	--fg: /*[[color-foreground]]*/
+	#404754;
+	--ac: /*[[color-accent]]*/
+	#1E90FF;
 }
 
 * {
-    --bgc: var(--bg);
-    --fgc: var(--fg);
-    --acc: var(--ac);
+	--bgc: var(--bg);
+	--fgc: var(--fg);
+	--acc: var(--ac);
 }
 
 /* ===========================
@@ -58,7 +61,7 @@ html {
 	color: #fff !important;
 }
 
-.btn-control-md ,
+.btn-control-md,
 .age-rating-details,
 .stack .card-list .card-item button.game-server-join-btn,
 .group-wall-deprecation-notice,
@@ -72,12 +75,12 @@ html {
 .nav-tabs,
 .group-forums-category-pill,
 .message-banner,
-.menu-vertical .menu-option .menu-secondary-option:active, 
+.menu-vertical .menu-option .menu-secondary-option:active,
 .menu-vertical .menu-option .menu-secondary-option.active,
-.menu-vertical .menu-option .menu-secondary-option:hover, 
+.menu-vertical .menu-option .menu-secondary-option:hover,
 .menu-vertical .menu-option .menu-secondary-option:focus,
 .friend-tile-dropdown-button:hover {
-    background: var(--fg) !important;
+	background: var(--fg) !important;
 	color: #fff;
 }
 
@@ -88,9 +91,9 @@ html {
 .stack-row,
 .section-content.remove-panel,
 .groups-list-items-container::-webkit-scrollbar-thumb {
-    background-color: var(--bg) !important;
-    border: 1px solid var(--fg);
-    border-radius: 8px;
+	background-color: var(--bg) !important;
+	border: 1px solid var(--fg);
+	border-radius: 8px;
 	color: #fff;
 }
 
@@ -104,12 +107,12 @@ html {
 }
 
 .switcher-items {
-	border:  1px solid var(--fg);
+	border: 1px solid var(--fg);
 	border-radius: 8px;
 }
 
 .profile-avatar-gradient {
-    background: linear-gradient(90deg, rgba(18, 18, 21, .2) 5.83%, rgba(255, 255, 255, .2) 47.76%, rgba(18, 18, 21, .2) 93.93%), var(--bg);
+	background: linear-gradient(90deg, rgba(18, 18, 21, .2) 5.83%, rgba(255, 255, 255, .2) 47.76%, rgba(18, 18, 21, .2) 93.93%), var(--bg);
 }
 
 .group-forums-category-pill.active,
@@ -124,7 +127,7 @@ html {
 
 /* New UI */
 .cover-gradient-overlay {
-    background: var(--bg) !important;
+	background: var(--bg) !important;
 }
 
 /* Borders */
@@ -137,7 +140,7 @@ html {
 }
 
 .nav-tabs {
-    border-radius: 8px;
+	border-radius: 8px;
 }
 
 .border {
@@ -160,9 +163,9 @@ html {
 .passkey-upsell-banner,
 .menu-vertical,
 .chat-search {
-    background-color: var(--bg) !important;
-    border-radius: 8px !important;
-    border: 1px solid var(--fg) !important;
+	background-color: var(--bg) !important;
+	border-radius: 8px !important;
+	border: 1px solid var(--fg) !important;
 }
 
 /* ===========================
@@ -345,7 +348,7 @@ html {
 .friend-tile-dropdown {
 	background-color: var(--bg) !important;
 	border-radius: 8px;
-	box-shadow: 0 0 8px rgba(0,0,0,.3);
+	box-shadow: 0 0 8px rgba(0, 0, 0, .3);
 }
 
 /* ===========================
@@ -483,13 +486,13 @@ input[type=radio] {
 }
 
 .group-details .group-members-list .member {
-    width: 9%;
-    margin: 10px;
+	width: 9%;
+	margin: 10px;
 }
 
 .section-header .link-menu {
-    top: 15px;
-    left: 925px;
+	top: 15px;
+	left: 925px;
 }
 
 .slide-item-description {
@@ -509,9 +512,10 @@ input[type=radio] {
 }
 
 .roseal-badges-container .roseal-badges .new-badges-grids-container .new-badges-grid-container .new-badges-grid .badge-container,
-.select-group .select-option, .select-group .rbx-select, 
+.select-group .select-option,
+.select-group .rbx-select,
 .friends-filter-searchbar-container,
-.rbx-select-group .select-option, 
+.rbx-select-group .select-option,
 .rbx-select-group .rbx-select {
 	background: var(--bg);
 	border: 1px solid var(--fg);
@@ -523,11 +527,11 @@ input[type=radio] {
 .roseal-filters-container .filter-items-container .filter-select.btn-secondary-md,
 #roseal-running-game-instances-container .regenerate-server-link-btn,
 #roseal-running-game-instances-container .rbx-private-game-server-copy-link {
-    background-color: var(--fg) !important;
+	background-color: var(--fg) !important;
 }
 
 .home-page-games-list {
-    margin-bottom: 75px;
+	margin-bottom: 75px;
 }
 
 .game-carousel.wide-game-tile-carousel.home-page-carousel .hover-game-tile.grid-tile.focused.old-hover {
@@ -535,29 +539,30 @@ input[type=radio] {
 }
 
 .game-home-page-container .friend-carousel-container {
-    margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 .roseal-menu-secondary-container .roseal-menu-secondary-option-content,
 .roseal-file-input,
 .user-profile-pop-up-text,
-.transparent-background-menu .menu-option:not(.roseal-menu-secondary-option), .transparent-background-menu .menu-option-content:not(.roseal-menu-secondary-option-content) {
-    background-color: var(--bg) !important;
+.transparent-background-menu .menu-option:not(.roseal-menu-secondary-option),
+.transparent-background-menu .menu-option-content:not(.roseal-menu-secondary-option-content) {
+	background-color: var(--bg) !important;
 	color: #fff;
 }
 
 .announcement-display {
-    display: flex;
-    flex-direction: column;
-    padding-left: 10px;
+	display: flex;
+	flex-direction: column;
+	padding-left: 10px;
 }
 
 .game-grid.home-game-grid.wide-game-tile-game-grid.game-grid.dynamic-layout-sizing .hover-game-tile.grid-tile.focused.old-hover {
-    background-color: transparent;
+	background-color: transparent;
 }
 
 [data-rosealfe-cssfixes] .favorite-games-container .game-cards .game-card {
-    width: 166px;
+	width: 166px;
 }
 
 /* Button animations */
@@ -623,7 +628,3 @@ input[type=radio] {
 		background-position: 0px 150px;
 	}
 }
-
-
-
-
