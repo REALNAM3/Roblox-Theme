@@ -1,726 +1,785 @@
-/* Global Settings */
-html {
-	display: block;
-}
+	/* Global Settings */
+	html {
+		display: block;
+	}
 
-:root {
-	--bg1: /*[[color-background1]]*/
-	#16191d;
-	--bg2: /*[[color-background2]]*/
-	#404754;
-	--fg: /*[[color-foreground]]*/
-	#ccc;
-	--ac: /*[[color-accent]]*/
-	#1E90FF;
+	:root {
+		--bg1: /*[[color-background1]]*/
+		#16191d;
+		--bg2: /*[[color-background2]]*/
+		#404754;
+		--ac: /*[[color-accent]]*/
+		#1E90FF;
 
-	/* Roseal text Colors */
+		/* Roseal text Colors 
 	--RS_TEXT-COLOR: var(--fg) !important;
 	--RS_ICON-COLOR: var(--fg) !important;
 	--RS_NAV-ICON-HOVER-COLOR: var(--fg) !important;
 	--RS_INFO-COLOR: var(--fg) !important;
 	--RS_PRIMARY-BACKGROUND-COLOR: var(--fg) !important;
-	--RS_SECONDARY-TEXT-COLOR: var(--fg) !important;
-}
+	--RS_SECONDARY-TEXT-COLOR: var(--fg) !important; */
+	}
 
-* {
-	--bg1c: var(--bg1);
-	--bg2c: var(--bg2);
-	--acc: var(--ac);
-}
+	* {
+		--bg1c: var(--bg1);
+		--bg2c: var(--bg2);
+		--acc: var(--ac);
+	}
 
-/* Dark theme Colors  */
-#navigation.rbx-left-col,
-#navigation .rbx-scrollbar,
-#navigation .simplebar-content,
-#navigation .simplebar-mask,
-#right-navigation-header,
-.dark-theme,
-.content,
-.container-footer,
-.container-fluid,
-.age-verification-upsell-banner,
-.rbx-navbar-header,
-.rbx-tab.active,
-.navbar-header,
-.nav.rbx-navbar,
-.select-option,
-.section-content-off,
-.personalized-bonus-items__container,
-.avatar-card-btns,
-.slide-item-container-left,
-.slide-item-container-right,
-.web-blox-css-mui-hjn929.MuiPaper-elevation,
-.menu-vertical .menu-option .menu-secondary,
-.profile-avatar-left,
-.chat-friend-list,
-.groups-list-sidebar,
-.group-section-content,
-.slide-switcher.groups,
-.section-content,
-.messageDivider,
-.group-open,
-.layer,
-.modal-content,
-.filter-options-container,
-.shopping-cart-modal,
-.chat-header,
-.ng-touched {
-	background-color: var(--bg1) !important;
-	color: var(--fg) !important;
-}
+	/* Dark theme Colors  */
+	#navigation.rbx-left-col,
+	#navigation .rbx-scrollbar,
+	#navigation .simplebar-content,
+	#navigation .simplebar-mask,
+	#right-navigation-header,
+	.dark-theme,
+	.content,
+	.container-footer,
+	.container-fluid,
+	.age-verification-upsell-banner,
+	.rbx-navbar-header,
+	.rbx-tab.active,
+	.navbar-header,
+	.nav.rbx-navbar,
+	.select-option,
+	.section-content-off,
+	.personalized-bonus-items__container,
+	.avatar-card-btns,
+	.slide-item-container-left,
+	.slide-item-container-right,
+	.web-blox-css-mui-hjn929.MuiPaper-elevation,
+	.menu-vertical .menu-option .menu-secondary,
+	.profile-avatar-left,
+	.chat-friend-list,
+	.group-section-content,
+	.slide-switcher.groups,
+	.section-content,
+	.messageDivider,
+	.group-open,
+	.layer,
+	.modal-content,
+	.filter-options-container,
+	.shopping-cart-modal,
+	.chat-header,
+	.ng-touched,
+	.comment,
+	.chat-main,
+	.dialog-header,
+	.dialog-body,
+	.details-container,
+	.friends-list-container,
+	.add-friends-option,
+	.chat-windows-header,
+	.notification-stream-body,
+	.notification-stream-header,
+	.sendr-notification-background,
+	.notification-stream-list,
+	.avatar-card-container,
+	.membership-section,
+	.premium-title-section,
+	.stipend-section,
+	.game-benefit-section,
+	.trade-benefit-section,
+	.account-selection,
+	.chat-search,
+	.topic-container,
+	.slide-switcher.games {
+		background-color: var(--bg1) !important;
+	}
 
-.btn-control-md,
-.age-rating-details,
-.stack .card-list .card-item button.game-server-join-btn,
-.group-wall-deprecation-notice,
-#catalog-react-container .catalog-revamp .topic-carousel .topic,
-.reaction-button.interactable,
-.bg-surface-300,
-.group-profile-header .contextual-menu-actions-btn,
-.btn-control-sm,
-.btn-control-xs,
-.btn-toggle,
-.nav-tabs,
-.group-forums-category-pill,
-.message-banner,
-.menu-vertical .menu-option .menu-secondary-option:active,
-.menu-vertical .menu-option .menu-secondary-option.active,
-.menu-vertical .menu-option .menu-secondary-option:hover,
-.menu-vertical .menu-option .menu-secondary-option:focus,
-.friend-tile-dropdown-button:hover {
-	background: var(--bg2) !important;
-	color: var(--fg) !important;
-}
+	.btn-control-md,
+	.age-rating-details,
+	.stack .card-list .card-item button.game-server-join-btn,
+	.group-wall-deprecation-notice,
+	#catalog-react-container .catalog-revamp .topic-carousel .topic,
+	.reaction-button.interactable,
+	.bg-surface-300,
+	.group-profile-header .contextual-menu-actions-btn,
+	.btn-control-sm,
+	.btn-control-xs,
+	.btn-toggle,
+	.nav-tabs,
+	.group-forums-category-pill,
+	.message-banner,
+	.menu-vertical .menu-option .menu-secondary-option:active,
+	.menu-vertical .menu-option .menu-secondary-option.active,
+	.menu-vertical .menu-option .menu-secondary-option:hover,
+	.menu-vertical .menu-option .menu-secondary-option:focus,
+	.friend-tile-dropdown-button:hover {
+		background: var(--bg2) !important;
+	}
 
-.section-content.remove-panel {
-	border: none !important;
-}
+	.stack-row,
+	.section-content.remove-panel,
+	.groups-list-items-container::-webkit-scrollbar-thumb,
+	.benefits-detail-container {
+		background-color: var(--bg1) !important;
+		border: 1px solid var(--bg2) !important;
+		border-radius: 8px;
+	}
 
-.stack-row,
-.section-content.remove-panel,
-.groups-list-items-container::-webkit-scrollbar-thumb {
-	background-color: var(--bg1) !important;
-	border: 1px solid var(--bg2);
-	border-radius: 8px;
-	color: var(--fg);
-}
 
-.hover-game-tile.contained-tile .featured-game-container .game-card-link .info-container,
-.group-event,
-.filters-modal-container,
-.dropdown-menu,
-.account-selection-list-item {
-	background-color: var(--bg1) !important;
-	border: 1px solid var(--bg2);
-	border-radius: 8px;
-}
+	.hover-game-tile.contained-tile .featured-game-container .game-card-link .info-container,
+	.group-event,
+	.filters-modal-container,
+	.dropdown-menu,
+	.account-selection-list-item,
+	.input-field {
+		background-color: var(--bg1) !important;
+		border: 1px solid var(--bg2) !important;
+		border-radius: 8px;
+	}
 
-.switcher-items {
-	border: 1px solid var(--bg2);
-	border-radius: 8px;
-}
+	.switcher-items {
+		border: 1px solid var(--bg2);
+		border-radius: 8px;
+	}
 
-.profile-avatar-gradient {
-	background: linear-gradient(90deg, rgba(18, 18, 21, .2) 5.83%, rgba(255, 255, 255, .2) 47.76%, rgba(18, 18, 21, .2) 93.93%), var(--bg1);
-}
+	.groups-list-sidebar {
+		background: var(--bg1) !important;
+		border-left: transparent !important;
+		border-right: transparent !important;
+	}
 
-@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&display=swap');
+	.profile-avatar-gradient {
+		background: linear-gradient(90deg, rgba(18, 18, 21, .2) 5.83%, rgba(255, 255, 255, .2) 47.76%, rgba(18, 18, 21, .2) 93.93%), var(--bg1);
+	}
 
-/* General text */
-p,
-a,
-li,
-.text,
-.text-info,
-.text-footer,
-.text-footer-nav,
-.text-name,
-.text-lead,
-.text-link:link,
-.text-secondary,
-.text-secondary:hover,
-.text-secondary:focus,
-.text-warning,
-.text-label,
-.text-robux,
-.text-robux-tile,
-.text-report,
-.text-report-ads,
-.text-error,
-.text-default,
-.text-pastname,
-.text-subject,
-.text-description,
-.session-info-content,
-.session-info-label,
-.text-overflow,
-.content-emphasis,
-.content-default,
-.content-muted,
-.info-label,
-.voting-panel span,
-.input-field,
-.input-field::placeholder,
-.profile-tab.active,
-.profile-tab:hover,
-.profile-tab,
-.age-verification-disclaimer,
-.group-forums-category-pill.active,
-.group-forums-category-pill:hover,
-.groups-list-search-input::placeholder {
-	font-family: "Geist", "Segoe UI", sans-serif;
-	letter-spacing: -0.01em;
-	line-height: 1.5;
-	color: #bcbec8;
-	-webkit-font-smoothing: antialiased;
-	font-optical-sizing: auto;
-}
+	.subscription-card {
+		background: radial-gradient(ellipse at 50% 50%, var(--bg1), #ffffff 100%) !important;
+	}
+	
+	.dark-theme .btn-secondary-md:is(
+	  .disabled,
+	  [disabled]
+	):is(
+	  :hover,
+	  :focus,
+	  :active,
+	  .active,
+	  *
+	) {
+		opacity: 1;
+		border-color: var(--bg2);
+	}
+	@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&display=swap');
 
-/* Fonts */
-.builder-font .font-header-2,
-.builder-font .font-bold,
-.builder-font .font-caption-header,
-.builder-font .small.font-caption-header {
-	font-family: "Geist", "Segoe UI", sans-serif;
-	letter-spacing: -0.01em;
-	line-height: 1.5;
-	color: #bcbec8;
-	-webkit-font-smoothing: antialiased;
-	font-optical-sizing: auto;
-}
+	/* General text */
+	p,
+	a,
+	li,
+	.text,
+	.text-info,
+	.text-footer,
+	.text-footer-nav,
+	.text-name,
+	.text-lead,
+	.text-link:link,
+	.text-secondary,
+	.text-secondary:hover,
+	.text-secondary:focus,
+	.text-warning,
+	.text-label,
+	.text-robux,
+	.text-robux-tile,
+	.text-report,
+	.text-report-ads,
+	.text-error,
+	.text-default,
+	.text-emphasis,
+	.text-pastname,
+	.text-subject,
+	.text-description,
+	.session-info-content,
+	.session-info-label,
+	.text-overflow,
+	.content-emphasis,
+	.content-default,
+	.content-muted,
+	.info-label,
+	.voting-panel span,
+	.input-field,
+	.input-field::placeholder,
+	.profile-tab.active,
+	.profile-tab:hover,
+	.profile-tab,
+	.age-verification-disclaimer,
+	.group-forums-category-pill.active,
+	.group-forums-category-pill:hover,
+	.groups-list-search-input::placeholder {
+		font-family: "Geist", "Segoe UI", sans-serif;
+		letter-spacing: -0.01em;
+		line-height: 1.5;
+		-webkit-font-smoothing: antialiased;
+		font-optical-sizing: auto;
+	}
 
-.web-blox-css-tss-zzwi3a-Typography-body1-Typography-colorSecondary-Typography-root,
-.web-blox-css-tss-hzyup-Typography-body1-Typography-root,
-.web-blox-css-tss-quks9y-Link-colorInherit-Link-root,
-.stylistic-alts-username {
-	color: var(--fg) !important;
-	font-family: "Geist", sans-serif !important;
-}
+	/* Fonts */
+	.builder-font .font-header-2,
+	.builder-font .font-bold,
+	.builder-font .font-caption-header,
+	.builder-font .small.font-caption-header {
+		font-family: "Geist", "Segoe UI", sans-serif;
+		letter-spacing: -0.01em;
+		line-height: 1.5;
+		-webkit-font-smoothing: antialiased;
+		font-optical-sizing: auto;
+	}
 
-/* Link states (headers) */
-.builder-font .font-header-2:link,
-.builder-font .font-header-2:visited,
-.builder-font .font-header-2:hover,
-.builder-font .font-header-2:active,
-.builder-font .font-caption-header:link,
-.builder-font .font-caption-header:visited,
-.builder-font .font-caption-header:hover,
-.builder-font .font-caption-header:active,
-.builder-font .font-caption-header:focus,
-.builder-font .small.font-caption-header:link,
-.builder-font .small.font-caption-header:visited,
-.builder-font .small.font-caption-header:hover,
-.builder-font .small.font-caption-header:active,
-.builder-font .small.font-caption-header:focus,
-.builder-font button,
-.friends-carousel-tile-experience,
-.rbx-header,
-.text-header {
-	font-family: "Geist", "Segoe UI", sans-serif;
-	letter-spacing: -0.01em;
-	line-height: 1.5;
-	color: #bcbec8;
-	-webkit-font-smoothing: antialiased;
-	font-optical-sizing: auto;
-}
+	.web-blox-css-tss-zzwi3a-Typography-body1-Typography-colorSecondary-Typography-root,
+	.web-blox-css-tss-hzyup-Typography-body1-Typography-root,
+	.web-blox-css-tss-quks9y-Link-colorInherit-Link-root,
+	.stylistic-alts-username {
+		font-family: "Geist", sans-serif !important;
+	}
 
-/* Text buttons Text */
-.btn-min-width,
-.btn-control-md,
-.btn-growth-xs,
-.input-dropdown-btn,
-.btn-secondary-md:link,
-.btn-secondary-md:active {
-	font-family: "Geist", "Segoe UI", sans-serif;
-	letter-spacing: -0.01em;
-	line-height: 1.5;
-	color: #bcbec8;
-	-webkit-font-smoothing: antialiased;
-	font-optical-sizing: auto;
-}
+	/* Link states (headers) */
+	.builder-font .font-header-2:link,
+	.builder-font .font-header-2:visited,
+	.builder-font .font-header-2:hover,
+	.builder-font .font-header-2:active,
+	.builder-font .font-caption-header:link,
+	.builder-font .font-caption-header:visited,
+	.builder-font .font-caption-header:hover,
+	.builder-font .font-caption-header:active,
+	.builder-font .font-caption-header:focus,
+	.builder-font .small.font-caption-header:link,
+	.builder-font .small.font-caption-header:visited,
+	.builder-font .small.font-caption-header:hover,
+	.builder-font .small.font-caption-header:active,
+	.builder-font .small.font-caption-header:focus,
+	.builder-font button,
+	.builder-font select,
+	.friends-carousel-tile-experience,
+	.rbx-header,
+	.text-header {
+		font-family: "Geist", "Segoe UI", sans-serif;
+		letter-spacing: -0.01em;
+		line-height: 1.5;
+		-webkit-font-smoothing: antialiased;
+		font-optical-sizing: auto;
+	}
 
-/* Old UI */
-.profile-stats {
-	background: var(--bg1);
-}
+	/* Text buttons Text */
+	.btn-min-width,
+	.btn-control-md,
+	.btn-growth-xs,
+	.input-dropdown-btn,
+	.btn-secondary-md:link,
+	.btn-secondary-md:active {
+		font-family: "Geist", "Segoe UI", sans-serif;
+		letter-spacing: -0.01em;
+		line-height: 1.5;
+		-webkit-font-smoothing: antialiased;
+		font-optical-sizing: auto;
+	}
 
-/* New UI */
-.cover-gradient-overlay {
-	background: var(--bg1) !important;
-}
+	/* Old UI */
+	.profile-stats {
+		background: var(--bg1);
+	}
 
-/* Borders */
-#navigation {
-	border-right: 1px solid var(--bg1);
-}
+	/* New UI */
+	.cover-gradient-overlay {
+		background: var(--bg1) !important;
+	}
 
-.container-fluid {
-	border-bottom: 1px solid var(--bg1);
-}
+	/* Borders */
+	.modal-header,
+	.border,
+	.border-top,
+	.border-bottom,
+	.border-right,
+	.border-left,
+	.border {
+		border-color: var(--bg2) !important;
+	}
 
-.nav-tabs {
-	border-radius: 8px;
-}
+	#navigation {
+		border-right: 1px solid var(--bg1);
+	}
 
-.border {
-	border-color: var(--bg2) !important;
-}
-/* Header & Navigation = */
-.rbx-header .rbx-navbar li:hover {
-	border-radius: 8px;
-	background-color: var(--bg1);
-}
+	.container-fluid {
+		border-bottom: 1px solid var(--bg1);
+	}
 
-.rbx-header .navbar-search {
-	background-color: var(--bg1);
-}
+	.nav-tabs {
+		border-radius: 8px;
+	}
 
-.groups-list-search .groups-list-search-input,
-.input-group-btn .input-dropdown-btn,
-.passkey-upsell-banner,
-.menu-vertical,
-.chat-search {
-	background-color: var(--bg1) !important;
-	border-radius: 8px !important;
-	border: 1px solid var(--bg2) !important;
-}
+	.section-content.remove-panel {
+		border: none !important;
+	}
 
-/* Catalog */
-.catalog-container .sticky .topic-container {
-	z-index: 999;
-	position: static;
-	display: flex;
-	overflow: hidden;
-	scroll-behavior: smooth;
-	height: 72px;
-	padding-top: 12px;
-	background-color: transparent;
-	border-radius: 8px;
-}
+	/* Header & Navigation = */
+	.rbx-header .rbx-navbar li:hover {
+		background-color: var(--bg1);
+	}
 
-#catalog-react-container .catalog-revamp .search-container .input-group-btn-category .dropdown-menu,
-#catalog-react-container .sticky .catalog-header,
-#catalog-react-page .search-bars,
-#catalog-react-container .sticky .topic-carousel,
-.topic-container .topic-navigation-button {
-	background: var(--bg1);
-}
-/* Profile */
-.avatar-card-container {
-	background: transparent;
-}
+	.rbx-header .navbar-search {
+		background-color: var(--bg1);
+	}
 
-.profile-header-top .header-caption .header-names .header-title h1.profile-name {
-	color: var(--bg1);
-	padding: 5px;
-	border-radius: 8px;
-	background-color: var(--fg);
-}
+	.groups-list-search .groups-list-search-input,
+	.input-group-btn .input-dropdown-btn,
+	.passkey-upsell-banner,
+	.menu-vertical {
+		background-color: var(--bg1) !important;
+		border-radius: 8px !important;
+		border: 1px solid var(--bg2) !important;
+	}
 
-.profile-avatar-right .profile-avatar-mask {
-	background-color: var(--bg1);
-	color: var(--fg);
-}
+	/* Catalog */
+	.catalog-container .sticky .topic-container {
+		z-index: 999;
+		position: static;
+		display: flex;
+		overflow: hidden;
+		scroll-behavior: smooth;
+		height: 72px;
+		padding-top: 12px;
+		background-color: transparent;
+		border-radius: 8px;
+	}
 
-/* ===========================
+	#catalog-react-container .catalog-revamp .search-container .input-group-btn-category .dropdown-menu,
+	#catalog-react-container .sticky .catalog-header,
+	#catalog-react-page .search-bars,
+	#catalog-react-container .sticky .topic-carousel,
+	.topic-container .topic-navigation-button {
+		background: var(--bg1) !important;
+	}
+	/* Profile */
+	.avatar-card-container {
+		background: transparent;
+	}
+
+	.profile-header-top .header-caption .header-names .header-title h1.profile-name {
+		color: var(--bg1);
+		padding: 5px;
+		border-radius: 8px;
+		background-color: var(--fg);
+	}
+
+	.profile-avatar-right .profile-avatar-mask {
+		background-color: var(--bg1);
+	}
+
+	/* ===========================
    TABS & CONTENT
 =========================== */
-.rbx-tab .rbx-tab-heading,
-.rbx-tabs-horizontal .rbx-tab .rbx-tab-heading,
-.rbx-tabs-horizontal {
-	background-color: var(--bg1);
-	color: var(--fg);
-}
+	.rbx-tab .rbx-tab-heading,
+	.rbx-tabs-horizontal .rbx-tab .rbx-tab-heading,
+	.rbx-tabs-horizontal {
+		background-color: var(--bg1);
+	}
 
-.slide-switcher .slide-item-container .slide-item-container-right,
-.slide-switcher .slide-item-container .slide-item-container-left {
-	background-color: var(--bg1);
-	color: var(--fg);
-}
+	.rbx-tab {
+		--color-tab-border: transparent !important;
+	}
 
-.not-approved-page-content .not-approved-page,
-.account-switcher-list .account-selection-list-item .account-selection,
-.profile-statistics > .section-content,
-.friends-content .avatar-card-content,
-.group-wall,
-.group-members-list,
-.shout-container,
-#settings-container .menu-vertical,
-.platform-events-details-container,
-.announcement-display {
-	background: var(--bg1);
-	border: 1px solid var(--bg2);
-	border-radius: 8px;
-}
+	.slide-switcher .slide-item-container .slide-item-container-right,
+	.slide-switcher .slide-item-container .slide-item-container-left {
+		background-color: var(--bg1);
+	}
 
-/* Messages  */
-.messages .messageDivider,
-.messages .messageDivider.message-news {
-	background-color: var(--bg1);
-	color: var(--fg);
-}
+	.not-approved-page-content .not-approved-page,
+	.account-switcher-list .account-selection-list-item .account-selection,
+	.profile-statistics > .section-content,
+	.friends-content .avatar-card-content,
+	.group-wall,
+	.group-members-list,
+	.shout-container,
+	#settings-container .menu-vertical,
+	.platform-events-details-container,
+	.announcement-display {
+		background: var(--bg1);
+		border: 1px solid var(--bg2);
+		border-radius: 8px;
+	}
 
-.messages .messageDivider.read,
-.messages .messageDivider .read {
-	color: hsla(0, 0%, 100%, .7);
-	background-color: var(--bg1);
-}
+	/* Messages  */
+	.messages .messageDivider,
+	.messages .messageDivider.message-news {
+		background-color: var(--bg1);
+	}
 
-/* Forms  */
-.form-control {
-	background-color: var(--bg1) !important;
-	border-color: var(--bg2);
-	color: var(--fg);
-}
+	.messages .messageDivider.read,
+	.messages .messageDivider .read {
+		color: hsla(0, 0%, 100%, .7);
+		background-color: var(--bg1);
+	}
 
-/* ===========================
+	/* Forms  */
+	.form-control {
+		background-color: var(--bg1) !important;
+		border-color: var(--bg2);
+	}
+
+	/* ===========================
    GAME CARDS
 =========================== */
-.game-card-container {
-	background-size: 200% auto;
-	background-image: linear-gradient(140deg, transparent 50%, transparent 100%);
-	opacity: 0.2;
-	border: 1px solid transparent;
-	margin: 10px 15px 15px !important;
-	transform-style: preserve-3d;
-}
-
-.game-card-container:hover {
-	animation: DarkGradientAnimator 0.5s forwards;
-}
-
-.game-carousel.expand-home-content-disabled .grid-item-container {
-	margin: 15px 0 15px 10px !important;
-	flex: 1 1 auto !important;
-}
-
-.game-card-thumb-container,
-.game-card-thumb-container .game-card-thumb,
-.game-tile-list .game-tile .game-card-container {
-	width: 150px;
-}
-
-.stack .card-list .card-item .button .game-server-join-btn {
-	margin: 12px auto 0;
-	font-size: 12px;
-	font-weight: 500;
-	height: auto;
-	background-color: white;
-	color: var(--bg1);
-	border: transparent;
-}
-
-.stack .card-list .card-item,
-.subscription-card-item {
-	background-color: var(--bg1) !important;
-	border: 1px solid var(--bg2);
-	border-radius: 8px;
-}
-
-/* Scroll  */
-.scroller.prev.disabled,
-.scroller.next.disabled {
-	background: var(--bg1);
-}
-
-.scroller.prev,
-.scroller.next {
-	border-radius: 0;
-	backdrop-filter: blur(25px);
-}
-
-.scroller.prev {
-	left: -40px;
-	background: var(--bg1);
-}
-
-.scroller.next {
-	right: -40px;
-	background: var(--bg1);
-	transform-style: preserve-3d;
-}
-
-/* Vertical Menu */
-.rbx-tabs-vertical .category-tabs .menu-vertical {
-	background-color: var(--bg1);
-	border-radius: 8px;
-	color: var(--fg);
-	padding: 10px;
-	border: 1px solid var(--bg2);
-}
-
-.friend-tile-dropdown {
-	background-color: var(--bg1) !important;
-	border-radius: 8px;
-	box-shadow: 0 0 8px rgba(0, 0, 0, .3);
-}
-
-/* Plataform events  */
-.platform-events-details-container {
-	margin-top: 180px;
-	width: 120%;
-	gap: 80px;
-	opacity: 1;
-	padding: 11px;
-	background-color: transparent;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	border-radius: 8px;
-	backdrop-filter: blur(20px);
-}
-
-/* Modals  */
-.modal-dialog .modal-content {
-	background-color: var(--bg1);
-	padding: 5px;
-	border-radius: 8px;
-}
-
-.rbx-left-col {
-	box-shadow: none !important;
-}
-
-/* Thumbails  */
-.asset-thumb-container,
-.item-card-container,
-.thumbnail-2d-container,
-.thumbnail-2d-container img {
-	background-color: transparent !important;
-}
-
-.avatar .avatar-card-image,
-.item-card-thumb-container,
-.profile-accoutrements-slider .accoutrement-item a {
-	background-color: var(--bg2) !important;
-	background-size: 100%;
-}
-
-/* Tabs extra animation remover  */
-.rbx-tabs-horizontal #horizontal-tabs .rbx-tab:not(.active) a:not(:hover) {
-	background-color: transparent;
-	color: var(--fg);
-}
-
-/* Play button  */
-.btn-common-play-game-lg,
-.preferred-region-btn.custom-join-btn,
-.btn-growth-sm {
-	background-color: transparent;
-	background-image: linear-gradient(-45deg, #00000070, transparent);
-	border-radius: 8px;
-}
-
-.btn-common-play-game-lg:hover,
-.preferred-region-btn.custom-join-btn:hover,
-.btn-growth-sm:hover {
-	animation: DarkPlayButtonAnimator .5s forwards;
-}
-
-/* Accent color  */
-#sign-up button,
-#join-game-button,
-.highcharts-point,
-.batch-buy-purchase-button,
-.btn-economy-robux-white-lg,
-.btn-common-play-game-lg,
-.btn-growth-lg,
-.btn-growth-md,
-.btn-growth-sm,
-.btn-growth-xs,
-.btn-toggle.on,
-.apply-button,
-.MuiSlider-track,
-.bg-action-emphasis,
-.cart-number-container,
-.notif-row-right-button,
-.web-blox-css-tss-lo77dr-Button-contained,
-input[type=radio] {
-	background-color: var(--ac) !important;
-	fill: var(--ac) !important;
-	accent-color: var(--ac);
-	&:hover {
-		transition: filter 0.15s ease;
-		filter: brightness(110%);
-	}
-}
-
-.icon-radio-check-circle-filled {
-	border: 6px solid var(--ac) !important;
-}
-
-#upgrade-now-button,
-.apply-button:disabled,
-.event-follow-button,
-.btn-primary-xs,
-.web-blox-css-mui-1t2bqnt {
-	background-color: var(--ac) !important;
-	color: #fff !important;
-}
-
-/* General fixes & improvements */
-.css-vx3gzi-heroUnitPill {
-	z-index: 1;
-}
-
-.text-error {
-	display: flex;
-	align-items: center;
-	gap: 4px;
-}
-
-.select-option {
-	background-color: var(--bg1) !important;
-}
-
-.event-unfollow-button,
-.rbx-refresh {
-	background: none !important;
-}
-
-.group-details .group-members-list .member {
-	width: 9%;
-	margin: 10px;
-}
-
-.section-header .link-menu {
-	top: 15px;
-	left: 925px;
-}
-
-.reaction-button.interactable {
-	position: relative;
-	top: -10px;
-}
-
-.slide-item-description {
-	border-top: 0 !important;
-}
-
-/* Roseal support */
-.search-landing-container,
-.rbx-header .navbar-search .new-dropdown-menu {
-	background-color: var(--bg1);
-	border-radius: 0 0 8px 8px;
-}
-
-.profile-platform-container .group-container.shown {
-	display: inline-block;
-	margin: 15px 5px;
-}
-
-.roseal-badges-container .roseal-badges .new-badges-grids-container .new-badges-grid-container .new-badges-grid .badge-container,
-.select-group .select-option,
-.select-group .rbx-select,
-.friends-filter-searchbar-container,
-.rbx-select-group .select-option,
-.rbx-select-group .rbx-select {
-	background: var(--bg1);
-	border: 1px solid var(--bg2);
-}
-
-.roseal-pill-toggle,
-.rbx-header .navbar-search .navbar-search-option.new-selected,
-#roseal-running-game-instances-container .stackable-card-list .card-item .game-server-details .rbx-buttons-section:not(.rbx-private-buttons-section) .copy-server-link-btn,
-.roseal-filters-container .filter-items-container .filter-select.btn-secondary-md,
-#roseal-running-game-instances-container .regenerate-server-link-btn,
-#roseal-running-game-instances-container .rbx-private-game-server-copy-link {
-	background-color: var(--bg2) !important;
-}
-
-.home-page-games-list {
-	margin-bottom: 75px;
-}
-
-.game-carousel.wide-game-tile-carousel.home-page-carousel .hover-game-tile.grid-tile.focused.old-hover {
-	background-color: transparent;
-}
-
-.game-home-page-container .friend-carousel-container {
-	margin-bottom: 0;
-}
-
-.roseal-menu-secondary-container .roseal-menu-secondary-option-content,
-.roseal-file-input,
-.user-profile-pop-up-text,
-.transparent-background-menu .menu-option:not(.roseal-menu-secondary-option),
-.transparent-background-menu .menu-option-content:not(.roseal-menu-secondary-option-content) {
-	background-color: var(--bg1) !important;
-	color: var(--fg);
-}
-
-.announcement-display {
-	display: flex;
-	flex-direction: column;
-	padding-left: 10px;
-}
-
-.game-grid.home-game-grid.wide-game-tile-game-grid.game-grid.dynamic-layout-sizing .hover-game-tile.grid-tile.focused.old-hover {
-	background-color: transparent;
-}
-
-[data-rosealfe-cssfixes] .favorite-games-container .game-cards .game-card {
-	width: 166px;
-}
-
-/* Button animations */
-@keyframes DarkPlayButtonAnimator {
-	from {
-		background-color: var(--ac);
-		background-image: linear-gradient(-45deg, #00000070, transparent);
-	}
-	to {
-		background-color: var(--bg1);
-		background-image: linear-gradient(45deg, var(--fg)fff2e, transparent);
-		transform: perspective(1000px) scale(1.1) rotateX(-360deg) rotateY(10deg);
-	}
-}
-
-@keyframes DarkPlayButtonAnimatorReverse {
-	from {
-		background-color: var(--bg1);
-		background-image: linear-gradient(45deg, var(--fg)fff2e, transparent);
-		transform: perspective(1000px) scale(1.1) rotateX(-360deg) rotateY(10deg);
-	}
-	to {
-		background-color: var(--ac);
-		background-image: linear-gradient(-45deg, #00000070, transparent);
-	}
-}
-
-/* Game card animations  */
-@keyframes DarkGradientAnimator {
-	from {
+	.game-card-container {
+		background-size: 200% auto;
 		background-image: linear-gradient(140deg, transparent 50%, transparent 100%);
-		background-color: var(--bg1) !important;
-		opacity: 0.2;
-		background-position: 0px 150px;
-	}
-	to {
-		background-image: linear-gradient(140deg, transparent 50%, var(--fg)fff5e 100%);
-		background-color: var(--bg1) !important;
-		opacity: 1;
-		background-position: 0px 10px;
-		border: 1px solid var(--fg)fff5e;
-		backdrop-filter: blur(50px);
-		transform: perspective(1000px) scale(1.1) rotateX(10deg) rotateY(-10deg);
-		box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-	}
-}
-
-@keyframes DarkGradientAnimatorReverse {
-	from {
-		background-image: linear-gradient(140deg, transparent 50%, var(--fg)fff5e 100%);
-		background-color: var(--bg1) !important;
-		opacity: 1;
-		background-position: 0px 10px;
-		transform: perspective(1000px) scale(1.1) rotateX(10deg) rotateY(-10deg);
-	}
-	to {
-		background-image: linear-gradient(140deg, transparent 50%, transparent 100%);
-		background-color: var(--bg1) !important;
 		opacity: 0.2;
 		border: 1px solid transparent;
-		background-position: 0px 150px;
+		transform-style: preserve-3d;
 	}
-}
+
+	.game-card-container:hover {
+		animation: DarkGradientAnimator 0.5s forwards;
+	}
+
+	.game-card-thumb-container,
+	.game-card-thumb,
+	.game-card-link,
+	.game-card-container {
+		width: auto;
+	}
+
+	.stack .card-list .card-item .button .game-server-join-btn {
+		margin: 12px auto 0;
+		font-size: 12px;
+		font-weight: 500;
+		height: auto;
+		background-color: white;
+		color: var(--bg1);
+		border: transparent;
+	}
+
+	.stack .card-list .card-item,
+	.subscription-card-item {
+		background-color: var(--bg1) !important;
+		border: 1px solid var(--bg2);
+		border-radius: 8px;
+	}
+
+	.game-sort-carousel-wrapper {
+		overflow-x: clip;
+	}
+	/* Scroll  */
+	.scroller.prev.disabled,
+	.scroller.next.disabled {
+		background: var(--bg1);
+	}
+
+	.scroller.prev,
+	.scroller.next {
+		border-radius: 0;
+		backdrop-filter: blur(25px);
+	}
+
+	.scroller.prev {
+		left: -40px;
+		background: var(--bg1);
+	}
+
+	.scroller.next {
+		right: -40px;
+		background: var(--bg1);
+		transform-style: preserve-3d;
+	}
+
+	/* Vertical Menu */
+	.rbx-tabs-vertical .category-tabs .menu-vertical {
+		background-color: var(--bg1);
+		border-radius: 8px;
+		padding: 10px;
+		border: 1px solid var(--bg2);
+	}
+
+	.friend-tile-dropdown {
+		background-color: var(--bg1) !important;
+		border-radius: 8px;
+		box-shadow: 0 0 8px rgba(0, 0, 0, .3);
+	}
+
+	/* Plataform events  */
+	.platform-events-details-container {
+		margin-top: 180px;
+		width: 120%;
+		gap: 80px;
+		opacity: 1;
+		padding: 11px;
+		background-color: transparent;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		border-radius: 8px;
+		backdrop-filter: blur(20px);
+	}
+
+	/* Modals  */
+	.modal-dialog .modal-content {
+		background-color: var(--bg1);
+		padding: 5px;
+		border-radius: 8px;
+	}
+
+
+	/* Thumbails  */
+	.asset-thumb-container,
+	.item-card-container,
+	.thumbnail-2d-container,
+	.thumbnail-2d-container img {
+		background-color: transparent !important;
+	}
+
+	.avatar .avatar-card-image,
+	.item-card-thumb-container,
+	.profile-accoutrements-slider .accoutrement-item a {
+		background-color: var(--bg2) !important;
+		background-size: 100%;
+	}
+
+	/* Tabs extra animation remover  */
+	.rbx-tabs-horizontal #horizontal-tabs .rbx-tab:not(.active) a:not(:hover) {
+		background-color: transparent;
+	}
+
+	/* Play button  */
+	.btn-common-play-game-lg,
+	.preferred-region-btn.custom-join-btn,
+	.btn-growth-sm {
+		background-color: transparent;
+		background-image: linear-gradient(-45deg, #00000070, transparent);
+		border-radius: 8px;
+	}
+
+	.btn-common-play-game-lg:hover,
+	.preferred-region-btn.custom-join-btn:hover,
+	.btn-growth-sm:hover {
+		animation: DarkPlayButtonAnimator .5s forwards;
+	}
+
+	/* Accent color  */
+	#sign-up button,
+	#join-game-button,
+	.highcharts-point,
+	.batch-buy-purchase-button,
+	.btn-economy-robux-white-lg,
+	.btn-common-play-game-lg,
+	.btn-growth-lg,
+	.btn-growth-md,
+	.btn-growth-sm,
+	.btn-growth-xs,
+	.btn-toggle.on,
+	.apply-button,
+	.MuiSlider-track,
+	.bg-action-emphasis,
+	.cart-number-container,
+	.notif-row-right-button,
+	.web-blox-css-tss-lo77dr-Button-contained,
+	.shrink-0,
+	input[type=radio] {
+		background-color: var(--ac) !important;
+		fill: var(--ac) !important;
+		accent-color: var(--ac);
+		color: #f7f7f8 !important;
+		&:hover {
+			transition: filter 0.15s ease;
+			filter: brightness(110%);
+		}
+	}
+
+	.icon-radio-check-circle-filled {
+		border: 6px solid var(--ac) !important;
+	}
+
+	#upgrade-now-button,
+	.apply-button:disabled,
+	.event-follow-button,
+	.btn-primary-xs,
+	.web-blox-css-mui-1t2bqnt {
+		background-color: transparent !important;
+	}
+
+	/* General fixes & improvements */
+	.css-vx3gzi-heroUnitPill {
+		z-index: 1;
+	}
+	
+	.hlist .list-item a {
+		display: contents;
+	}
+	.form-control:first-child {
+		border-top-right-radius: 8px !important;
+		border-bottom-right-radius: 8px !important;
+	}
+
+	.text-error {
+		display: flex;
+		align-items: center;
+		gap: 4px;
+	}
+
+	.select-option {
+		background-color: var(--bg1) !important;
+	}
+
+	.event-unfollow-button,
+	.rbx-refresh {
+		background: none !important;
+	}
+
+	.group-details .group-members-list .member {
+		width: 9%;
+		margin: 10px;
+	}
+
+	.section-header .link-menu {
+		top: 15px;
+		left: 925px;
+	}
+
+	.reaction-button.interactable {
+		position: relative;
+		top: -10px;
+	}
+
+	.slide-item-description {
+		border-top: 0 !important;
+	}
+
+	/* Roseal support */
+	.search-landing-container,
+	.rbx-header .navbar-search .new-dropdown-menu,
+	.add-to-playlist-popover {
+		background-color: var(--bg1);
+		border-radius: 0 0 8px 8px;
+	}
+
+	.roseal-badges-container .roseal-badges .new-badges-grids-container .new-badges-grid-container .new-badges-grid .badge-container,
+	.select-group .select-option,
+	.select-group .rbx-select,
+	.friends-filter-searchbar-container,
+	.rbx-select-group .select-option,
+	.rbx-select-group .rbx-select {
+		background: var(--bg1);
+		border: 1px solid var(--bg2);
+	}
+
+	.roseal-pill-toggle,
+	.rbx-header .navbar-search .navbar-search-option.new-selected,
+	#roseal-running-game-instances-container .stackable-card-list .card-item .game-server-details .rbx-buttons-section:not(.rbx-private-buttons-section) .copy-server-link-btn,
+	.roseal-filters-container .filter-items-container .filter-select.btn-secondary-md,
+	#roseal-running-game-instances-container .regenerate-server-link-btn,
+	#roseal-running-game-instances-container .rbx-private-game-server-copy-link {
+		background-color: var(--bg2) !important;
+	}
+
+	.home-page-games-list {
+		margin-bottom: 55px;
+	}
+
+	.game-carousel.wide-game-tile-carousel.home-page-carousel .hover-game-tile.grid-tile.focused.old-hover {
+		background-color: transparent;
+	}
+
+	.game-home-page-container .friend-carousel-container {
+		margin-bottom: 0;
+	}
+
+	.roseal-menu-secondary-container .roseal-menu-secondary-option-content,
+	.roseal-file-input,
+	.user-profile-pop-up-text,
+	.transparent-background-menu .menu-option:not(.roseal-menu-secondary-option),
+	.transparent-background-menu .menu-option-content:not(.roseal-menu-secondary-option-content) {
+		background-color: var(--bg1) !important;
+	}
+
+	.announcement-display {
+		display: flex;
+		flex-direction: column;
+		padding-left: 10px;
+	}
+
+	.game-grid.home-game-grid.wide-game-tile-game-grid.game-grid.dynamic-layout-sizing .hover-game-tile.grid-tile.focused.old-hover {
+		background-color: transparent;
+	}
+
+
+	.btn-growth-xs.play-button {
+		background-color: transparent;
+		background-image: linear-gradient(-45deg, #00000070, transparent);
+		border-radius: 8px;
+		width: 75% !important;
+		margin: 0 auto;
+	}
+
+	.btn-growth-xs.play-button:hover {
+		animation: DarkPlayButtonAnimator .5s forwards;
+	}
+
+
+
+	.rbx-left-col {
+		box-shadow: none !important;
+	}
+
+	.game-carousel.dynamic-layout-sizing-disabled,
+	.game-carousel.expand-home-content-disabled {
+		overflow-x: visible;
+		overflow-y: visible
+	}
+
+	/* Button animations */
+	@keyframes DarkPlayButtonAnimator {
+		from {
+			background-color: var(--ac);
+			background-image: linear-gradient(-45deg, #00000070, transparent);
+		}
+		to {
+			background-color: var(--bg1);
+			background-image: linear-gradient(45deg, var(--fg)fff2e, transparent);
+			transform: perspective(1000px) scale(1.1) rotateX(-360deg) rotateY(10deg);
+		}
+	}
+
+	@keyframes DarkPlayButtonAnimatorReverse {
+		from {
+			background-color: var(--bg1);
+			background-image: linear-gradient(45deg, var(--fg)fff2e, transparent);
+			transform: perspective(1000px) scale(1.1) rotateX(-360deg) rotateY(10deg);
+		}
+		to {
+			background-color: var(--ac);
+			background-image: linear-gradient(-45deg, #00000070, transparent);
+		}
+	}
+
+	/* Game card animations  */
+	@keyframes DarkGradientAnimator {
+		from {
+			background-image: linear-gradient(140deg, transparent 50%, transparent 100%);
+			opacity: 0.2;
+			background-position: 0px 150px;
+		}
+		to {
+			background-image: linear-gradient(140deg, transparent 50%, var(--fg)fff5e 100%);
+			background-color: var(--bg1) !important;
+			opacity: 1;
+			background-position: 0px 10px;
+			border: 1px solid var(--fg)fff5e;
+			backdrop-filter: blur(50px);
+			transform: perspective(1000px) scale(1.1) rotateX(10deg) rotateY(-10deg);
+			box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+		}
+	}
+
+	@keyframes DarkGradientAnimatorReverse {
+		from {
+			background-image: linear-gradient(140deg, transparent 50%, var(--fg)fff5e 100%);
+			opacity: 1;
+			background-position: 0px 10px;
+			transform: perspective(1000px) scale(1.1) rotateX(10deg) rotateY(-10deg);
+		}
+		to {
+			background-image: linear-gradient(140deg, transparent 50%, transparent 100%);
+			background-color: var(--bg1) !important;
+			opacity: 0.2;
+			border: 1px solid transparent;
+			background-position: 0px 150px;
+		}
+	}
